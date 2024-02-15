@@ -14,7 +14,7 @@ protocol MangaRepository {
 
 class MangasRepositoryImpl: MangaRepository {
     func getMangas() async throws -> MangaListDTO {
-        guard let url = URL(string: "https://mymanga-acacademy-5607149ebe3d.herokuapp.com/list/mangas") else {
+        guard let url = URL(string: "https://mymanga-acacademy-5607149ebe3d.herokuapp.com/list/mangas?per=20") else {
             throw NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])
         }
         
@@ -27,7 +27,7 @@ class MangasRepositoryImpl: MangaRepository {
     }
     
     func searchMangas(searchTitle: String, searchDemographics: [String]?) async throws -> MangaListDTO {
-        guard let url = URL(string: "https://mymanga-acacademy-5607149ebe3d.herokuapp.com/search/manga") else {
+        guard let url = URL(string: "https://mymanga-acacademy-5607149ebe3d.herokuapp.com/search/manga?per=20") else {
             throw NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])
         }
         

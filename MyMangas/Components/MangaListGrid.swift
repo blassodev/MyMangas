@@ -24,7 +24,7 @@ struct MangaListGrid: View {
                 ]) {
                     ForEach(viewModel.mangas) { manga in
                         NavigationLink(value: manga) {
-                                               MangaItem(imageUrl: manga.mainPicture, title: manga.title, genre: "test", publico: "test")
+                            MangaItem(imageUrl: manga.mainPicture, title: manga.title, genre: manga.genres.first?.genre ?? "", publico: manga.demographics.first?.demographic ?? "")
                                            }
 
                     }

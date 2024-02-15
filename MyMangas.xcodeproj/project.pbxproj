@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C466AC02B7D3B31004CD555 /* LibraryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C466ABF2B7D3B31004CD555 /* LibraryVM.swift */; };
+		0CC56AC92B7EA32500C1061D /* LocalMangaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC56AC82B7EA32500C1061D /* LocalMangaDetailView.swift */; };
 		CB5203C42B78EDFA00D2755B /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5203C32B78EDFA00D2755B /* ExploreView.swift */; };
 		CB5203C82B78EEB400D2755B /* MangaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5203C72B78EEB400D2755B /* MangaItem.swift */; };
 		CB99844E2B76753100E41812 /* MyMangasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB99844D2B76753100E41812 /* MyMangasApp.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C466ABF2B7D3B31004CD555 /* LibraryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LibraryVM.swift; path = ../../../../LibraryVM.swift; sourceTree = "<group>"; };
+		0CC56AC82B7EA32500C1061D /* LocalMangaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalMangaDetailView.swift; path = ../../../../LocalMangaDetailView.swift; sourceTree = "<group>"; };
 		CB5203C32B78EDFA00D2755B /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		CB5203C72B78EEB400D2755B /* MangaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaItem.swift; sourceTree = "<group>"; };
 		CB99844A2B76753100E41812 /* MyMangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,7 @@
 				CBF2297E2B7906A700E43033 /* MangaListGrid.swift */,
 				CBBBE74E2B7BF4700028B5BE /* MangaDetailView.swift */,
 				CBBBE7532B7CBD860028B5BE /* LibraryView.swift */,
+				0CC56AC82B7EA32500C1061D /* LocalMangaDetailView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				CBF229882B7940D700E43033 /* ExploreVM.swift */,
+				0C466ABF2B7D3B31004CD555 /* LibraryVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,7 +270,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CB9984492B76753100E41812 = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -336,12 +342,14 @@
 				CB5203C82B78EEB400D2755B /* MangaItem.swift in Sources */,
 				CBBBE7542B7CBD860028B5BE /* LibraryView.swift in Sources */,
 				CBF2297F2B7906A700E43033 /* MangaListGrid.swift in Sources */,
+				0C466AC02B7D3B31004CD555 /* LibraryVM.swift in Sources */,
 				CBF229892B7940D700E43033 /* ExploreVM.swift in Sources */,
 				CBF229872B793EEE00E43033 /* MangaRepository.swift in Sources */,
 				CB5203C42B78EDFA00D2755B /* ExploreView.swift in Sources */,
 				CBF229812B79250700E43033 /* MangaDTO.swift in Sources */,
 				CBBBE74F2B7BF4700028B5BE /* MangaDetailView.swift in Sources */,
 				CB99844E2B76753100E41812 /* MyMangasApp.swift in Sources */,
+				0CC56AC92B7EA32500C1061D /* LocalMangaDetailView.swift in Sources */,
 				CBBBE7562B7CCD890028B5BE /* LocalLibraryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -415,6 +424,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -429,7 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -475,6 +486,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -483,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -501,6 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMangas/Preview Content\"";
+				DEVELOPMENT_TEAM = N35ZH28W58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -508,6 +521,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +543,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMangas/Preview Content\"";
+				DEVELOPMENT_TEAM = N35ZH28W58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -536,6 +551,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

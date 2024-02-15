@@ -47,3 +47,31 @@ struct Author: Identifiable, Hashable {
     let id: UUID
     let role, lastName, firstName: String
 }
+
+extension Manga {
+    func toLocalLibrary() -> LocalLibrary {
+        let localDemographics = demographics.map { $0.demographic }
+        let localThemes = themes.map { $0.theme }
+        let localGenres = genres.map { $0.genre }
+        let localAuthors = authors.map { $0.firstName + " " + $0.lastName }
+        
+        return LocalLibrary(id: id,
+                            demographics: localDemographics,
+                            titleJapanese: titleJapanese,
+                            themes: localThemes,
+                            chapters: chapters,
+                            genres: localGenres,
+                            startDate: startDate,
+                            score: score,
+                            titleEnglish: titleEnglish,
+                            title: title,
+                            background: background,
+                            url: url,
+                            authors: localAuthors,
+                            endDate: endDate,
+                            sypnosis: sypnosis,
+                            volumes: volumes,
+                            mainPicture: mainPicture,
+                            status: status)
+    }
+}

@@ -41,4 +41,22 @@ struct MangaExamples {
         mainPicture: "https://www.mymangas.com/shingeki-no-kyojin/cover.jpg",
         status: "Finalizado"
     )
-}
+    
+    static let exampleLocalLibrary = LocalLibrary(id: 1,
+                                           demographics: ["Shounen"],
+                                           titleJapanese: "進撃の巨人",
+                                           themes: ["Action", "Fantasy"],
+                                           chapters: 139,
+                                           genres: ["Action", "Drama", "Fantasy", "Horror", "Mystery", "Shounen", "Supernatural"],
+                                           startDate: Date(timeIntervalSince1970: 1300915200),
+                                           score: 8.64,
+                                           titleEnglish: "Attack on Titan",
+                                           title: "Shingeki no Kyojin",
+                                           background: "Several hundred years ago, humans were nearly exterminated by Titans.",
+                                           url: "https://example.com/shingeki_no_kyojin",
+                                           authors: ["Isayama, Hajime"],
+                                           endDate: Date(timeIntervalSince1970: 1616476800),
+                                           sypnosis: "The story follows Eren Yeager, his adopted sister Mikasa Ackerman, and their friend Armin Arlert.",
+                                           volumes: 34,
+                                           mainPicture: "https://example.com/shingeki_no_kyojin.jpg",
+                                           status: "Finished")}
